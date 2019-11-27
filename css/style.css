@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold/RobotoSlab-Bold.eot') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+html{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+}
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.wrapper ul{
+    list-style-type: none;
+}
+.top-line{
+    background-color: #1f1f56;
+    padding: 18px 0;
+    font-size: 0;
+}
+.top-line ul{
+    padding-left: 25px;
+    margin: 0;
+    padding: 0;
+}
+.top-line li{
+    display: inline-block;
+}
+.top-line a{
+    color: white;
+    text-decoration: none;
+}
+.top-line a:hover{
+    color: #fd8300;
+}
+.top-menu{
+    font-size: 14px;
+}
+.top-menu a{
+    margin-right: 13px;
+}
+.social a{
+    margin-right: 13px;
+}
+.column{
+    display: inline-block;
+    vertical-align: top;
+    width:  219px;
+    margin: 40px 14px 30px;
+    font-size:  14px;
+}
+.row{
+    margin: 0 -14px;
+    font-size:  0;
+}
+.header-contacts p{
+    margin: 0;
+}
+.phones{
+    font-size: 18px;
+}
+.phones a{
+    font-size: bold;
+}
+.phones a,
+.cta-btm a{
+    text-decoration: none;
+    color: #25252c;
+}
+.messengers a{
+    color: #404047;
+}
+.skype{
+    text-decoration: none;
+}
+.messengers,
+.cta-btm{
+    font-size: 16px;
+}
+.cta-btm a{
+    border: 2px solid #fd8300;
+    border-radius: 25px;
+    padding: 15px 30px;
+    display: inline-block;
+}
+.special-offer{
+    background-image: url(../pictures/background.png);
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding:  40px 0;
+}
+.special-proposition{
+    margin: 0;
+    padding-bottom: 17px;
+}
+.special-description{
+    margin: 0;
+    padding-bottom: 17px;
+}
+.special-proposition,
+.content h1{
+    font-size: 30px;
+}
+.special-price {
+    font-size: 24px;
+    color:  #fd8300;
+    margin: 0;
+}
+.special-price span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.special-proposition,
+.content h1,
+.popular_projects h2{
+    font-family: "Roboto Slab";
+    font-weight: bold;
+}
+.main_div{
+    margin-bottom: 50px ;
+}
+.aside{
+    max-width: 219px;
+    overflow: hidden;
+    border-radius: 3px;
+    margin: 35px 0 0;
+}
+.aside p{
+    margin: 0;
+    padding: 15px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    background-color:#1f1f56;
+}
+.aside-menu{
+    background-color: #e4e4ec;
+}
+.aside ul,
+.aside-menu p{
+    margin: 0;
+    padding: 0;
+}
+.aside-menu,
+.sub-menu{
+    list-style-type: none;
+    font-size: 14px;
+}
+.aside-menu a{
+    display: block;
+    padding: 15px;
+    color: #25252c;
+    text-decoration: none;
+}
+.aside-menu li{
+    position: relative;
+}
+.aside-menu>li::before{
+    content:"";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 15px;
+    top: 19px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    transition: all 1s ease;
+}
+.aside-menu>li:hover::before{
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    top: 16px;
+}
+.aside-menu>li:hover>a{
+    color: #fff;
+    background-color: #fd8300;
+}
+.sub-menu>li:hover>a{
+    font-weight: bold;
+    background-color: #cecedd;
+}
+.sub-menu a{
+    color: #666;     
+}
+.sub-menu{
+    display: none;
+}
+.aside-menu li:hover .sub-menu{
+    display: block;
+}
+main{
+    margin: 40px 0 0;
+}
+.content{
+    max-width: 715px;
+}
+.mere{
+    color:  #fd8300;
+}
+.line::after{
+    border-bottom: 1px solid black;
+}
+.popular_projects p{
+    margin: 0;
+    margin-bottom: 6px;
+}
+.popular_projects .mg_clr{
+    margin-bottom: 0;
+}
+figcaption{
+    font-size: 13px;
+}
+footer{
+    background-color: #ededf5;
+}
+.footer-menu a{
+    text-decoration: none;
+}
+.footer-menu a:hover{
+    color:  #fd8300;
+}
+.copy{
+    background-color: #dcdce6;
+    font-size: 13px;
+    color: #9999a6;
+    text-align: center;
+    margin: 0;
+    padding: 18px 0 15px;
+    font-size: 13px
+}
+.clr::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
+/* hata plus  prise css*/
+.price_table h1{
+    font-size: 24px;
+    color: #24242b;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+}
+.price_table p{
+    color: #666666;
+}
+.price_table table{
+    width: 100%;
+    background-color: #e4e4ec;
+}
+.table tr{
+    padding: 0;
+}
+.headtable{
+    color:  white;
+    font-family: "Roboto Slab";
+    background: #1f1f56;
+}
+.tbody tr:hover{
+    color:  #fff7ee;
+    background-color: #fd8300;
+}
+.bottom_inf{
+    font-size: 13px;
+}
+.price_table a{
+    color:  #fd8300;
+}
+/*contact ostany storinka*/  

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('RobotoSlab-Bold.eot');
+    src: url('RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('RobotoSlab-Bold.woff2') format('woff2'),
+        url('RobotoSlab-Bold.woff') format('woff'),
+        url('RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
