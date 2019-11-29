@@ -65,21 +65,38 @@ body{
 .header-contacts p{
     margin: 0;
 }
+.shadow_header::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid;
+    border-color: rgba(228,228,236,0.4`) ;
+    box-shadow:(0 0 5px rgba(0,0,0,0.1));
+}
 .phones{
     font-size: 18px;
 }
 .phones a{
     font-size: bold;
 }
+.line_meseng::before{
+    content: "";
+    background-color: black;
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    left: 1;
+
+}
 .phones a,
 .cta-btm a{
     text-decoration: none;
     color: #25252c;
 }
+.messengers .post{
+    text-decoration: underline;
+}
 .messengers a{
     color: #404047;
-}
-.skype{
     text-decoration: none;
 }
 .messengers,
@@ -208,11 +225,13 @@ main{
 .content{
     max-width: 715px;
 }
-.mere{
-    color:  #fd8300;
+.more{
+    color: #fd8300;
 }
 .line::after{
+    content: "";
     border-bottom: 1px solid black;
+    display: block;
 }
 .popular_projects p{
     margin: 0;
@@ -267,18 +286,34 @@ footer{
 .price_table table{
     width: 100%;
     background-color: #e4e4ec;
-}
-.table tr{
-    padding: 0;
+    border-collapse: collapse;
 }
 .headtable{
     color:  white;
     font-family: "Roboto Slab";
     background: #1f1f56;
 }
+.headtable th{
+    text-align: left;
+}
 .tbody tr:hover{
     color:  #fff7ee;
     background-color: #fd8300;
+}
+.name{
+    padding: 15px 20px;
+}
+.square{
+    padding: 15px 70px;
+}
+.room{
+    padding: 15px 50px ;
+}
+.garag{
+    padding: 15px 10px;
+}
+.prise{
+    padding: 15px 10px;
 }
 .bottom_inf{
     font-size: 13px;
