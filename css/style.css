@@ -20,7 +20,7 @@ body{
     margin: 0 auto;
 }
 .wrapper ul{
-    list-style-type: none;
+    list-style: none;
 }
 .top-line{
     background-color: #1f1f56;
@@ -51,6 +51,36 @@ body{
 .social a{
     margin-right: 13px;
 }
+.fb{
+    width: 10px;
+    height: 18px;
+    background: url(../pictures/sprite.png) no-repeat;
+    background-position: -13px -50px;
+    transition: all 0.5s ease;
+}
+.tw{
+    width: 16px;
+    height: 16px;
+    background: url(../pictures/sprite.png) no-repeat;
+    background-position: -20px -32px;
+    transition: all 0.5s ease;
+}
+.inst{
+    width: 14px;
+    height: 16px;
+    background: url(../pictures/sprite.png) no-repeat;
+    background-position: -18px -15px;
+    transition: all 0.5s ease;
+}
+.fb:hover{
+    background-position: -2px -50px;
+}
+.tw:hover{
+    background-position: -3px -32px;
+}
+.inst:hover{
+    background-position: -1.5px -15px;
+}
 .column{
     display: inline-block;
     vertical-align: top;
@@ -69,8 +99,6 @@ body{
     content: "";
     display: block;
     border-bottom: 1px solid;
-    border-color: rgba(228,228,236,0.4`) ;
-    box-shadow:(0 0 5px rgba(0,0,0,0.1));
 }
 .phones{
     font-size: 18px;
@@ -109,6 +137,38 @@ body{
     padding: 15px 30px;
     display: inline-block;
 }
+.phone_ico,
+.post_ico,
+.skype_ico{
+    position: relative;
+}
+.phone_ico::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    background: url(../images/sprait.png) no-repeat;
+    background-position: -1px/*-20px кольорва хата*/ -2px;
+    top: 15px;
+}
+.post_ico::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    background: url(../images/sprait.png) no-repeat;
+    background-position: -1px/*-20px кольорва хата*/ -2px;
+    top: 15px;
+} 
+.skype_ico::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 13px;
+    background: url(../images/sprait.png) no-repeat;
+    background-position: -1px/*-20px кольорва хата*/ -2px;
+    top: 15px;
+}  
 .special-offer{
     background-image: url(../pictures/background.png);
     background-size: cover;
@@ -322,3 +382,10 @@ footer{
     color:  #fd8300;
 }
 /*contact ostany storinka*/  
+.contact-info{
+    width: 960px;
+}
+.first_column_main{
+    width: 50%;
+    display: inline-block ;
+}
