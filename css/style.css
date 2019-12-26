@@ -50,6 +50,7 @@ body{
 }
 .social a{
     margin-right: 13px;
+    display: block;
 }
 .fb{
     width: 10px;
@@ -65,7 +66,7 @@ body{
     background-position: -20px -32px;
     transition: all 0.5s ease;
 }
-.inst{
+.ins{
     width: 14px;
     height: 16px;
     background: url(../pictures/sprite.png) no-repeat;
@@ -78,7 +79,7 @@ body{
 .tw:hover{
     background-position: -3px -32px;
 }
-.inst:hover{
+.ins:hover{
     background-position: -1.5px -15px;
 }
 .column{
@@ -87,6 +88,7 @@ body{
     width:  219px;
     margin: 40px 14px 30px;
     font-size:  14px;
+    box-sizing: border-box;
 }
 .row{
     margin: 0 -14px;
@@ -106,14 +108,20 @@ body{
 .phones a{
     font-size: bold;
 }
+.line_meseng{
+    position: relative;
+}
 .line_meseng::before{
     content: "";
-    background-color: black;
+    background-color: #e4e4ec;
     width: 1px;
     height: 50px;
     position: absolute;
-    left: 1;
-
+    left: -8px;
+}
+.phones,
+.messengers{
+    padding-left: 50px;
 }
 .phones a,
 .cta-btm a{
@@ -122,6 +130,10 @@ body{
 }
 .messengers .post{
     text-decoration: underline;
+}
+.post a{
+    font-size: 16px;
+    color: #25252c;
 }
 .messengers a{
     color: #404047;
@@ -147,7 +159,7 @@ body{
     position: absolute;
     width: 16px;
     height: 13px;
-    background: url(../images/sprait.png) no-repeat;
+    background: url(../pictures/sprite.png) no-repeat;
     background-position: -1px/*-20px кольорва хата*/ -2px;
     top: 15px;
 }
@@ -156,7 +168,7 @@ body{
     position: absolute;
     width: 16px;
     height: 13px;
-    background: url(../images/sprait.png) no-repeat;
+    background: url(../pictures/sprite.png) no-repeat;
     background-position: -1px/*-20px кольорва хата*/ -2px;
     top: 15px;
 } 
@@ -165,7 +177,7 @@ body{
     position: absolute;
     width: 16px;
     height: 13px;
-    background: url(../images/sprait.png) no-repeat;
+    background: url(../pictures/sprite.png) no-repeat;
     background-position: -1px/*-20px кольорва хата*/ -2px;
     top: 15px;
 }  
@@ -385,7 +397,29 @@ footer{
 .contact-info{
     width: 960px;
 }
-.first_column_main{
-    width: 50%;
-    display: inline-block ;
+.contact-info h2{
+    font-size: 24px;
+    color: #24242b;
+    font-family: "Roboto Slab";
+    font-weight: 700;
 }
+.column_main{
+    width: 50%;
+}
+.sub-column_main{
+    width: 25%;
+}
+.info-title{
+    color: #24242b;
+    font-family: "Roboto Slab";
+    font-weight: 700; 
+}
+.greyp{
+    color: #666666;    
+}   
+.contact-info::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid;
+    border-color: #e4e4ec;
+} 
