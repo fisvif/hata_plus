@@ -15,6 +15,18 @@ html{
 body{
     margin: 0;
 }
+.clr::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
 .wrapper{
     max-width: 960px;
     margin: 0 auto;
@@ -54,33 +66,33 @@ body{
 }
 .fb{
     width: 10px;
-    height: 18px;
+    height: 19px;
     background: url(../pictures/sprite.png) no-repeat;
-    background-position: -13px -50px;
+    background-position: -2px -2px;
     transition: all 0.5s ease;
 }
 .tw{
-    width: 16px;
+    width: 17px;
     height: 16px;
     background: url(../pictures/sprite.png) no-repeat;
-    background-position: -20px -32px;
+    background-position: -2.3px -22px;
     transition: all 0.5s ease;
 }
 .ins{
-    width: 14px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background: url(../pictures/sprite.png) no-repeat;
-    background-position: -18px -15px;
+    background-position: -1px -39px;
     transition: all 0.5s ease;
 }
 .fb:hover{
-    background-position: -2px -50px;
+    background-position: -14px -2px;
 }
 .tw:hover{
-    background-position: -3px -32px;
+    background-position: -21.4px -22px;
 }
 .ins:hover{
-    background-position: -1.5px -15px;
+    background-position: -22px -39px;
 }
 .column{
     display: inline-block;
@@ -157,29 +169,32 @@ body{
 .phone_ico::before{
     content: "";
     position: absolute;
-    width: 16px;
-    height: 13px;
+    width: 17px;
+    height: 17px;
     background: url(../pictures/sprite.png) no-repeat;
-    background-position: -1px/*-20px кольорва хата*/ -2px;
-    top: 15px;
+    background-position: -1px -75px;
+    right: 100%;
+    padding-right: 12px;
 }
 .post_ico::before{
     content: "";
     position: absolute;
-    width: 16px;
-    height: 13px;
+    width: 17px;
+    height: 14px;
     background: url(../pictures/sprite.png) no-repeat;
-    background-position: -1px/*-20px кольорва хата*/ -2px;
-    top: 15px;
+    background-position: -2px -60px;
+    right: 100%;
+    padding-right: 12px;
 } 
 .skype_ico::before{
     content: "";
     position: absolute;
-    width: 16px;
-    height: 13px;
+    width: 18px;
+    height: 17px;
     background: url(../pictures/sprite.png) no-repeat;
-    background-position: -1px/*-20px кольорва хата*/ -2px;
-    top: 15px;
+    background-position: -2px -95px;
+    right: 100%;
+    padding-right: 12px;
 }  
 .special-offer{
     background-image: url(../pictures/background.png);
@@ -297,12 +312,16 @@ main{
 .content{
     max-width: 715px;
 }
+.content p{
+    line-height: 24px;
+    color: #666666;    
+}
 .more{
     color: #fd8300;
 }
 .line::after{
     content: "";
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid  #e4e4ec;
     display: block;
 }
 .popular_projects p{
@@ -323,6 +342,7 @@ footer{
 }
 .footer-menu a:hover{
     color:  #fd8300;
+    text-decoration: underline;
 }
 .copy{
     background-color: #dcdce6;
@@ -333,18 +353,6 @@ footer{
     padding: 18px 0 15px;
     font-size: 13px
 }
-.clr::after{
-    content:"";
-    clear: both;
-    display: block;
-}
-.right{
-    float: right;
-}
-.left{
-    float: left;
-}
-
 /* hata plus  prise css*/
 .price_table h1{
     font-size: 24px;
@@ -359,11 +367,13 @@ footer{
     width: 100%;
     background-color: #e4e4ec;
     border-collapse: collapse;
+    border-radius: 3px;
 }
 .headtable{
     color:  white;
     font-family: "Roboto Slab";
-    background: #1f1f56;
+    background-color: #1f1f56;
+    border-radius: 3px 3px 0 0;
 }
 .headtable th{
     text-align: left;
@@ -392,6 +402,7 @@ footer{
 }
 .price_table a{
     color:  #fd8300;
+    font-weight: bold;
 }
 /*contact ostany storinka*/  
 .contact-info{
