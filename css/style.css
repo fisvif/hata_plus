@@ -107,8 +107,7 @@ body{
     margin: 0 -14px;
     font-size:  0;
 }
-.header-contacts,
-.footer-contacts{
+.header-contacts{
     padding: 35px 0;
 }
 .header-contacts p,
@@ -118,7 +117,7 @@ body{
 .shadow_header{
     content: "";
     display: block;
-    box-shadow: 0 0  10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .phones{
     font-size: 18px;
@@ -351,24 +350,50 @@ li.brd-btm-none{
     border-bottom: 1px solid  #e4e4ec;
     display: block;
 }
+.popular_projects figure{
+    position: relative;
+}
+figcaption{
+    font-size: 13px;
+}
+.popp_a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.popular_projects h3{
+    color: #1f1f56;
+    font-weight: bold;
+    text-decoration: none;
+}
+.popular_projects h3:hover{
+    text-decoration: underline;
+}
 .popular_projects p{
     margin: 0;
     margin-bottom: 6px;
 }
 .popular_projects sup{
-    font-size: 17px;
+    font-size: 9px;
 }
 .popular_projects .mg_clr{
     margin-bottom: 0;
 }
-figcaption{
-    font-size: 13px;
-}
 footer{
     background-color: #ededf5;
 }
+.footer-contacts{
+    padding: 35px 0 30px;
+}
+.footer-menu ul{
+    margin: 0;
+}
 .footer-menu a{
     text-decoration: none;
+    line-height: 26px;
+    color: #666666;
 }
 .footer-menu a:hover{
     color:  #fd8300;
@@ -448,7 +473,7 @@ footer{
     width: 50%;
 }
 .sub-column_main{
-    width: 25%;
+    width: 50%;
 }
 .info-title{
     color: #24242b;
