@@ -389,6 +389,7 @@ footer{
 }
 .footer-menu ul{
     margin: 0;
+    padding-left: 0;
 }
 .footer-menu a{
     text-decoration: none;
