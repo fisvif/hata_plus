@@ -124,7 +124,7 @@ body{
     font-size: 18px;
 }
 .phones a{
-    font-size: bold;
+    font-weight: bold;
 }
 .phones p:first-child,
 .messengers p:first-child{
