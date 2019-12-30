@@ -99,13 +99,17 @@ body{
     display: inline-block;
     vertical-align: top;
     width:  219px;
-    margin: 40px 14px 30px;
     font-size:  14px;
     box-sizing: border-box;
+    margin: 0 14px;
 }
 .row{
     margin: 0 -14px;
     font-size:  0;
+}
+.header-contacts,
+.footer-contacts{
+    padding: 35px 0;
 }
 .header-contacts p,
 .footer-contacts p{
@@ -286,8 +290,12 @@ body{
     color: #25252c;
     text-decoration: none;
 }
-.aside-menu li{
+.aside-menu>li{
     position: relative;
+    border-bottom: 1px solid #cdcddd;
+}
+li.brd-btm-none{
+    border-bottom: none;
 }
 .aside-menu>li::before{
     content:"";
@@ -336,6 +344,7 @@ body{
 }
 .more:hover{
     font-weight: bold;
+    font-size: 16px;
 }
 .line::after{
     content: "";
