@@ -15,6 +15,9 @@ html{
 body{
     margin: 0;
 }
+.brd-btm-none{
+    border-bottom: none;
+}
 .clr::after{
     content:"";
     clear: both;
@@ -293,9 +296,7 @@ body{
     position: relative;
     border-bottom: 1px solid #cdcddd;
 }
-li.brd-btm-none{
-    border-bottom: none;
-}
+
 .aside-menu>li::before{
     content:"";
     position: absolute;
@@ -421,22 +422,34 @@ footer{
 }
 .price_table table{
     width: 100%;
-    background-color: #e4e4ec;
     border-collapse: collapse;
+    background-color: #e4e4ec;
     border-radius: 3px;
 }
-.headtable{
+.price_table tr:last-child:hover td:first-child{
+    border-radius: 0 0 0 3px;
+}
+.price_table tr:last-child:hover td:last-child{
+    border-radius: 0 0 3px 0;
+}
+table tr{
+    border-bottom: 1px solid #cdcddd;
+}
+.headtable th{
     color:  white;
     font-family: "Roboto Slab";
     background-color: #1f1f56;
-    border-radius: 3px 3px 0 0;
-}
-.headtable th{
     text-align: left;
 }
 .tbody tr:hover{
     color:  #fff7ee;
     background-color: #fd8300;
+}
+.headtable th:first-child{
+    border-radius: 3px 0 0 0;
+}
+.headtable th:last-child{
+    border-radius: 0 3px 0 0;
 }
 .name{
     padding: 15px 20px;
@@ -447,9 +460,7 @@ footer{
 .room{
     padding: 15px 50px ;
 }
-.garag{
-    padding: 15px 10px;
-}
+.garag,
 .prise{
     padding: 15px 10px;
 }
@@ -489,4 +500,4 @@ footer{
     display: block;
     border-bottom: 1px solid;
     border-color: #e4e4ec;
-} 
+}
