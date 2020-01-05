@@ -474,6 +474,7 @@ table tr{
 /*contact ostany storinka*/  
 .contact-info{
     width: 960px;
+    margin-bottom: 70px;
 }
 .contact-info h2{
     font-size: 24px;
@@ -481,11 +482,32 @@ table tr{
     font-family: "Roboto Slab";
     font-weight: 700;
 }
+.contact-info p{
+    line-height: 21px;
+}
+.contact-info .phones{ 
+    padding-left: 0;
+    line-height: 24px;
+}
+.contact-info .post a{ 
+    line-height: 24px;
+}
+.contact-info::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid;
+    border-color: #e4e4ec;
+}
+.contact-info .column_main:first-child .sub-column_main:last-child {
+    padding-left: 80px;
+}
 .column_main{
     width: 50%;
+    box-sizing: border-box;
 }
 .sub-column_main{
     width: 50%;
+    box-sizing: border-box;
 }
 .info-title{
     color: #24242b;
@@ -494,10 +516,38 @@ table tr{
 }
 .greyp{
     color: #666666;    
-}   
-.contact-info::after{
-    content: "";
-    display: block;
-    border-bottom: 1px solid;
-    border-color: #e4e4ec;
+}
+.details{
+    margin: 0 auto;
+    padding-left: 45px;
+    width: 310px;
+    margin: 0 60px 0 100px;
+}
+.form input{
+    font-size: 13px;
+    line-height: 21px;
+    color: #9999a6;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.inp-theme{
+    width: 470px;
+    padding-left: 15px;
+    height: 40px;
+} 
+.inp-text{
+    height: 105px;
+    width: 470px;
+    padding: 15px;
+}
+.submit{
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;  
+    font-weight: bold;
+    text-align: center;
+    background-color: #fd8300;
+    border: 0;
+    border-radius: 18px;
+    padding: 12px 31px;
 }
