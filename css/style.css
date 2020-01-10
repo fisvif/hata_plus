@@ -255,7 +255,7 @@ body{
     font-weight: bold;
 }
 .main_div{
-    margin-bottom: 50px ;
+    padding: 45px 0;
 }
 .aside{
     max-width: 219px;
@@ -475,6 +475,7 @@ table tr{
 .contact-info{
     width: 960px;
     margin-bottom: 70px;
+    position: relative;
 }
 .contact-info h2{
     font-size: 24px;
@@ -495,8 +496,8 @@ table tr{
 .contact-info::after{
     content: "";
     display: block;
-    border-bottom: 1px solid;
-    border-color: #e4e4ec;
+    
+    border-bottom: 1px solid #e4e4ec;    
 }
 .contact-info .column_main:first-child .sub-column_main:last-child {
     padding-left: 80px;
@@ -523,24 +524,55 @@ table tr{
     width: 310px;
     margin: 0 60px 0 100px;
 }
-.form input{
+.maps iframe{
+    width: 466px; 
+    height: 300px;
+    border: 0;  
+}
+.form{
+    padding-left: 28px;
+}
+.form input,
+.form textarea{
     font-size: 13px;
     line-height: 21px;
     color: #9999a6;
     margin-bottom: 10px;
     font-style: italic;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #c4c4d3;
 }
+.inp-nambers{
+    margin-left: 14px;
+}
+.inp-name,
+.inp-nambers,
 .inp-theme{
-    width: 470px;
-    padding-left: 15px;
+    padding: 0 15px;
     height: 40px;
-} 
+    width: 100%;
+}
+.inp-name,
+.inp-nambers{
+    width: 48%;
+}
 .inp-text{
     height: 105px;
-    width: 470px;
-    padding: 15px;
+    width: 100%;
+    font-family: Arial;
+    padding: 14px 15px;
 }
-.submit{
+.inp-checkbox{
+    margin: 0;
+    display: inline-block;
+    margin-left: 28px;
+}
+.form:last-child p{
+    display: inline-block;
+    margin-left: 8px;
+}
+.form .submit{
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;  
@@ -550,4 +582,6 @@ table tr{
     border: 0;
     border-radius: 18px;
     padding: 12px 31px;
+    display: inline-block;
+    margin: 0;
 }
