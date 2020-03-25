@@ -29,7 +29,6 @@ body{
 .left{
     float: left;
 }
-
 .wrapper{
     max-width: 960px;
     margin: 0 auto;
@@ -152,7 +151,6 @@ body{
     text-decoration: none;
     color: #25252c;
 }
-
 .messengers .post{
     text-decoration: underline;
 }
@@ -296,7 +294,6 @@ body{
     position: relative;
     border-bottom: 1px solid #cdcddd;
 }
-
 .aside-menu>li::before{
     content:"";
     position: absolute;
