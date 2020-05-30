@@ -584,15 +584,44 @@ table tr{
     margin-left: 8px;
 }
 .form .submit{
+    padding: 12px 31px;
+    display: inline-block;
+    margin: 0;
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;  
     font-weight: bold;
     text-align: center;
     background-color: #fd8300;
-    border: 0;
     border-radius: 18px;
+}
+.main-sent{
+    min-height: 164px;
+}
+.send-agree,
+.send-txt{
+    margin-bottom: 30px;
+    color: #1f1f56;
+}
+.send-txt{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.send-button{
     padding: 12px 31px;
-    display: inline-block;
     margin: 0;
+    font-size: 14px;
+    color: #ffffff;  
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fd8300;
+    border-radius: 18px;
+}
+.form .submit:hover,
+.send-button:hover{
+    color: #fd8300;
+    background-color: #fff;
+    border: 1px solid #fd8300;
 }

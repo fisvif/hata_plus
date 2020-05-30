@@ -89,13 +89,13 @@
           </div>
           <div class="column_main left form">
             <p class="info-title">Форма зворотнього зв’язку</p>
-            <form action="#" method="GET">  
-                <label><input type="text" name="#" class="inp-name" placeholder="Ваше імя"></label>
-                <label><input type="text" name="#" class="inp-nambers" placeholder="Телефон"></label>
-                <label><input type="text" name="#" class="inp-theme" placeholder="Тема повідомлення"></label>
-                <label><textarea name="#" class="inp-text" placeholder="Текст"></textarea></label>
+            <form action="send.php" method="POST">  
+                <label><input type="text" name="name" class="inp-name" placeholder="Ваше імя"></label>
+                <label><input type="text" name="phone" class="inp-nambers" placeholder="Телефон"></label>
+                <label><input type="text" name="email" class="inp-theme" placeholder=" Ваш емеіл"></label>
+                <label><textarea name="text" class="inp-text" placeholder="Текст"></textarea></label>
                 <label><input type="submit" name="submit" class="submit" value="Відправити"></label>
-                <label><input type="checkbox" name="#" class="inp-checkbox" value="#"></label>
+                <label><input type="checkbox" name="agree" class="inp-checkbox" value="true"></label>
                 <p class="greyp">Я бажаю отримувати останні новини</p>
             </form>
           </div>
