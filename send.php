@@ -98,8 +98,8 @@
                             <p class='send-txt'>Помилка відправки, введіть номер телефона та пошту</p>
                             <form action='send.php' method='POST'>  
                                 <label><input type='text' name='name' class='inp-name' placeholder='Ваше імя'></label>
-                                <label><input type='text' name='phone' class='inp-nambers' placeholder='Телефон'></label>
-                                <label><input type='text' name='email' class='inp-theme' placeholder=' Ваш емеіл'></label>
+                                <label><input type='text' name='phone' class='inp-nambers' required placeholder='Телефон'></label>
+                                <label><input type='text' name='email' class='inp-theme' required placeholder=' Ваш емеіл'></label>
                                 <label><textarea name='text' class='inp-text' placeholder='Текст'></textarea></label>
                                 <label><input type='submit' name='submit' class='submit' value='Відправити'></label>
                                 <label><input type='checkbox' name='agree' class='inp-checkbox' value='true'></label>
