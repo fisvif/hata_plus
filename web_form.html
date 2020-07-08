@@ -12,6 +12,8 @@
       <div class="top-line">
         <div class="wrapper clr">
           <nav>
+            <input type="checkbox" class="button" name="button" id="button">         
+            <label class="hamburger" for="button"><span></span></label>
             <ul class="top-menu left">
               <li><a href="index.html">Головна</a></li>
               <li><a href="#">Про компанію</a></li>
@@ -22,35 +24,49 @@
           </nav>
           <ul class="social right">
             <li>
-              <a href="https://www.facebook.com" class="fb"></a>
+              <a href="https://www.facebook.com"><span class="fb"></span></a>
             </li>
             <li>
-              <a href="https://twitter.com/?lang=uk" class="tw"></a>
+              <a href="https://twitter.com/?lang=uk"><span class="tw"></span></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/?hl=uk" class="ins"></a>
+              <a href="https://www.instagram.com/?hl=uk"><span class="ins"></span></a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="header-contacts shadow_header">
+      <div class="header-contacts">
         <div class="wrapper">
-          <div class="row">
+          <div class="row clr header-columns">
             <div class="column logo">
               <a href="index.html"><img class="img_logo" src="pictures/logo.png" alt="logo"></a>
-            </div>
-            <div class="column phones">
-              <p class="phone_ico"><a class="phone" href="tel:+380971002525">+38(097) 100-25-25</a></p>
-              <p><a href="tel:+380971002526">+38(097) 100-25-25</a></p>
-            </div>
-            <div class="column messengers line_meseng">
-              <p class="post_ico"><a class="post" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
-              <p class="skype_ico"><a class="skype" href="skype:hataplus">hataplus</a></p>
             </div>
             <div class="column cta-btm">
               <a href="#">Замовіть дзвінок</a>
             </div>
+            <div class="column phones">
+              <p class="phone_ico">
+                <a class="phone" href="tel:+380971002525">+38(097) 100-25-25</a>
+              </p>
+              <p><a href="tel:+380971002526">+38(097) 100-25-25</a></p>
+            </div>
+            <div class="column messengers line_meseng">
+              <p class="post_ico">
+                <a class="post" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
+              </p>
+              <p class="skype_ico"><a href="skype:hataplus">hataplus</a></p>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="special-offer">
+        <div class="wrapper">
+          <p class="special-proposition">Пропозиція місяця</p>
+          <p class="special-description">
+            Ми пропонуємо великій вибір котеджів "під ключ" за самими низькими
+            цінами
+          </p>
+          <p class="special-price"><span>5999</span> грн / м<sup>2</sup></p>
         </div>
       </div>
     </header>
@@ -103,30 +119,34 @@
     </div>
     <footer>
       <div class="wrapper">
-        <div class="row footer-contacts">
-          <div class="column footer-menu">
-            <ul>
-              <li><a href="">Будинки</a></li>
-              <li><a href="">Інфраструктура</a></li>
-              <li><a href="">Сервіс</a></li>
-              <li><a href="">Новини</a></li>
-            </ul>
-          </div>
-          <div class="column footer-menu">
-            <ul>
-              <li><a href="#">Про компанію</a></li>
-              <li><a href="#">Страхування</a></li>
-              <li><a href="#">Контакти</a></li>
-            </ul>
-          </div>
+        <div class="row footer-contacts clr">
           <div class="column phones">
-            <p class="phone_ico"><a class="phone" href="tel:+380971002525">+38(097) 100-25-25</a></p>
+            <p class="phone_ico">
+              <a class="phone" href="tel:+380971002525">+38(097) 100-25-25</a>
+            </p>
             <p><a href="tel:+380971002526">+38(097) 100-25-25</a></p>
           </div>
           <div class="column messengers">
-            <p class="post_ico"><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
-            <p class="skype_ico"><a class="skype" href="skype:hataplus">hataplus</a></p>
+            <p class="post_ico">
+              <a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
+            </p>
+            <p class="skype_ico"><a href="skype:hataplus">hataplus</a></p>
           </div>
+            <div class="column footer-menu">
+              <ul>
+                <li><a href="#">Будинки</a></li>
+                <li><a href="#">Інфраструктура</a></li>
+                <li><a href="#">Сервіс</a></li>
+                <li><a href="#">Новини</a></li>
+              </ul>
+            </div>
+            <div class="column footer-menu">
+              <ul>
+                <li><a href="#">Про компанію</a></li>
+                <li><a href="#">Страхування</a></li>
+                <li><a href="#">Контакти</a></li>
+              </ul>
+            </div>
         </div>
       </div>
       <p class="copy">&copy; Будівельна компанія “Хата Плюс” 2018.</p>
