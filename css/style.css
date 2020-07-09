@@ -419,6 +419,7 @@ body {
 
 .more {
     color: #fd8300;
+    line-height: 16px;
 }
 
 .more:hover {
@@ -527,7 +528,7 @@ footer .messengers {
 }
 
 .price_table table {
-    width: 100%;
+    width: 50px;
     border-collapse: collapse;
     background-color: #e4e4ec;
     border-radius: 3px;
@@ -593,7 +594,7 @@ table tr {
 
 /*contact ostany storinka*/
 .contact-info {
-    width: 960px;
+    max-width: 960px;
     margin-bottom: 75px;
     position: relative;
 }
@@ -655,7 +656,6 @@ table tr {
 }
 
 .details {
-    margin: 0 auto;
     padding-left: 45px;
     width: 310px;
     margin: 0 60px 0 100px;
@@ -791,7 +791,7 @@ table tr {
         position: absolute;
         visibility: hidden;
     }
-    label {
+    header label {
         display: inline-block;
         position: relative;
         width: 45px;
@@ -909,18 +909,21 @@ table tr {
     }
 
     /*contact ostany storinka*/
-    .maps {
+    .column_main{
+        float: none;
+        display: block;
         width: 100%;
     }
-
+    .contact-info .column_main:first-child .sub-column_main:last-child {
+        padding-left: 50px;
+    }
+    .details{
+        margin: 0 auto;
+        width: 255px;
+    }
     .form {
         min-width: 480px;
         width: 100%;
-    }
-
-    .form,
-    .maps {
-        display: inline-block;
     }
 
 }
@@ -1021,5 +1024,22 @@ table tr {
     }
     .footer-menu:last-child{
         padding: 0;
+    }
+
+    /*contact ostany storinka*/
+    .column-main:first-child{
+        padding-bottom: 50px;
+    }
+    .sub-column_main{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 25px;
+    }
+    .contact-info .column_main:first-child .sub-column_main:last-child {
+        padding-left: 0;
+    }
+    .details{
+        padding-left: 25px;
     }
 }
