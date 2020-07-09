@@ -1006,16 +1006,20 @@ table tr {
     }
 
     .house-columns img,
-    .house-columns figcaption {
+    .house-columns figcaption,
+    footer .phones,
+    footer .messengers, 
+    .footer-menu{
         float: none;
     }
 
-    .footer-menu {
-        padding-left: 15px;
-        margin: 0;
+    .footer-menu{
+        display: block;
+        margin: 0 auto;
+        padding: 0 0 15px;
+        width: 135px;
     }
-    .footer-menu:last-child {
-        padding-left: 15px;
-        margin: 0;
+    .footer-menu:last-child{
+        padding: 0;
     }
 }
