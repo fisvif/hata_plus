@@ -922,7 +922,7 @@ table tr {
         width: 255px;
     }
     .form {
-        min-width: 480px;
+        min-width: 270px;
         width: 100%;
         padding-left: 0;
     }
@@ -1036,6 +1036,7 @@ table tr {
         display: block;
         margin: 0 auto;
         padding-bottom: 25px;
+        width: 60%;
     }
     .contact-info .column_main:first-child .sub-column_main:last-child {
         padding-left: 0;
