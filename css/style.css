@@ -924,6 +924,7 @@ table tr {
     .form {
         min-width: 480px;
         width: 100%;
+        padding-left: 0;
     }
 
 }
@@ -1041,5 +1042,14 @@ table tr {
     }
     .details{
         padding-left: 25px;
+    }
+    .form label{
+        display: block;
+    }
+    .form input{
+        width: 100%;
+    }
+    .inp-nambers{
+        margin-left: 0;
     }
 }
