@@ -526,14 +526,15 @@ footer .messengers {
 .price_table p {
     color: #666666;
 }
-
+.table-wrapper{
+    overflow-x: scroll;
+}
 .price_table table {
-    width: 50px;
+    min-width: 480px;
     border-collapse: collapse;
     background-color: #e4e4ec;
     border-radius: 3px;
 }
-
 .price_table tr:last-child:hover td:first-child {
     border-radius: 0 0 0 3px;
 }
@@ -582,7 +583,10 @@ table tr {
 .prise {
     padding: 15px 10px;
 }
-
+.prise{
+    min-width: 62px;
+    border-radius: 3px;
+}
 .bottom_inf {
     font-size: 13px;
 }
@@ -859,7 +863,19 @@ table tr {
         max-width: 470px;
         margin-bottom: 50px;
     }
-
+    .house-columns-price{
+        text-align: justify;
+    }
+    .house-columns-price::after{
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+    .house-columns-price .column{
+        float: none;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
     .house-columns figure:last-child {
         margin-bottom: 0;
     }
@@ -884,11 +900,8 @@ table tr {
     }
 
     .footer-menu {
-        padding-left: 30px;
-    }
-
-    .footer-menu:last-child {
-        padding-left: 95px;
+        padding-left: 45px;
+        margin: 0;
     }
 
     footer .phones,
@@ -905,7 +918,7 @@ table tr {
     }
 
     footer .messengers {
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     /*contact ostany storinka*/
@@ -950,20 +963,25 @@ table tr {
     footer:last-child .footer-menu {
         margin-left: 93px;
     }
-
-    footer .phones,
-    footer .messengers,
     header .logo,
     .column.cta-btm {
         float: left;
         margin-bottom: 50px;
     }
-    .footer-menu:last-child {
-        padding-left: 60px;
+    footer .phones,
+    footer .messengers{
+        float: none;
+        display: inline-block;
     }
-}
+    .footer-menu{
+       float: none;
+       display: block;
+       margin: 0 auto;
+       padding-bottom: 15px;
+    }
 
-@media screen and (max-width: 530px) {
+}
+@media screen and (max-width: 545px) {
 
     .footer-contacts,
     .header-columns {
@@ -972,7 +990,7 @@ table tr {
     }
 
     header .phones {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
 
     .line_meseng::before {
@@ -1016,10 +1034,9 @@ table tr {
         display: block;
         margin: 0 auto;
         padding: 0 0 15px 40px;
-        width: 135px;
     }
     .footer-menu:last-child{
-        padding: 0;
+        padding: 0 0 0 40px;
     }
 
     /*contact ostany storinka*/
