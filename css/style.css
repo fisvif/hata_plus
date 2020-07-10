@@ -966,7 +966,7 @@ table tr {
     header .logo,
     .column.cta-btm {
         float: left;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     footer .phones,
     footer .messengers{
@@ -990,7 +990,7 @@ table tr {
     }
 
     header .phones {
-        margin-bottom: 25px;
+        margin-bottom: 50px;
     }
 
     .line_meseng::before {
