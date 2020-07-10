@@ -131,7 +131,7 @@ body {
 .column {
     vertical-align: top;
     float: left;
-    max-width: 219px;
+    width: 219px;
     font-size: 14px;
     box-sizing: border-box;
     margin: 0 14px;
@@ -216,7 +216,7 @@ body {
 .column.cta-btm {
     text-align: right;
     float: right;
-    height: 60px;
+    height: 62px;
 }
 
 .cta-btm a {
@@ -958,11 +958,6 @@ table tr {
         float: left;
         margin-bottom: 50px;
     }
-
-    footer .messengers {
-        margin-left: px;
-    }
-
     .footer-menu:last-child {
         padding-left: 60px;
     }
@@ -1020,7 +1015,7 @@ table tr {
     .footer-menu{
         display: block;
         margin: 0 auto;
-        padding: 0 0 15px;
+        padding: 0 0 15px 40px;
         width: 135px;
     }
     .footer-menu:last-child{
