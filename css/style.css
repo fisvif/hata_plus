@@ -83,9 +83,11 @@ body {
     margin-left: 25px;
     display: block;
 }
-.button{
-   display: none;
+
+.button {
+    display: none;
 }
+
 .fb,
 .tw,
 .ins {
@@ -152,8 +154,6 @@ body {
 }
 
 .shadow_header {
-    content: "";
-    display: block;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -501,10 +501,6 @@ footer .messengers {
     float: right;
 }
 
-footer .messengers {
-    height: 52px;
-}
-
 .copy {
     background-color: #dcdce6;
     font-size: 13px;
@@ -526,15 +522,18 @@ footer .messengers {
 .price_table p {
     color: #666666;
 }
-.table-wrapper{
+
+.table-wrapper {
     overflow-x: scroll;
 }
+
 .price_table table {
     min-width: 480px;
     border-collapse: collapse;
     background-color: #e4e4ec;
     border-radius: 3px;
 }
+
 .price_table tr:last-child:hover td:first-child {
     border-radius: 0 0 0 3px;
 }
@@ -583,10 +582,12 @@ table tr {
 .prise {
     padding: 15px 10px;
 }
-.prise{
+
+.prise {
     min-width: 62px;
     border-radius: 3px;
 }
+
 .bottom_inf {
     font-size: 13px;
 }
@@ -752,15 +753,18 @@ table tr {
         padding: 0 25px;
         max-width: 500px;
     }
-    header{
+
+    header {
         padding-top: 76px;
     }
-    .top-line{
+
+    .top-line {
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 9;
     }
+
     nav {
         display: inline-block;
     }
@@ -778,23 +782,28 @@ table tr {
         transform: scaleX(0);
         transition: all 1s ease;
     }
+
     .top-menu li {
         display: block;
         margin: 18px 25px;
     }
+
     .top-menu li a {
         font-size: 20px;
     }
-    .social a{
+
+    .social a {
         padding: 10px;
         margin: 0;
     }
-/* hamburger adaptive */
+
+    /* hamburger adaptive */
     .button {
         display: block;
         position: absolute;
         visibility: hidden;
     }
+
     header label {
         display: inline-block;
         position: relative;
@@ -804,6 +813,7 @@ table tr {
         border-radius: 5px;
         z-index: 10;
     }
+
     .hamburger span,
     .hamburger span:before,
     .hamburger span:after {
@@ -819,27 +829,35 @@ table tr {
         transition: all 1s ease;
         z-index: 10;
     }
+
     .hamburger span:before {
         transform: translate(-50%, calc(-50% - 8px));
     }
+
     .hamburger span:after {
         transform: translate(-50%, calc(-50% + 9px));
     }
+
     .button:checked+label span {
         background: rgba(255, 255, 255, 0);
     }
+
     .button:checked+label span:before {
         transform: translate(-50%, -50%) rotate(45deg);
     }
+
     .button:checked+label span:after {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
+
     .button:checked~.top-menu {
         transform: scaleX(1);
     }
-/*  hamburger adaptive */
+
+    /*  hamburger adaptive */
     .column.cta-btm {
         float: left;
+        text-align: right;
     }
 
     .main_div {
@@ -863,19 +881,23 @@ table tr {
         max-width: 470px;
         margin-bottom: 50px;
     }
-    .house-columns-price{
+
+    .house-columns-price {
         text-align: justify;
     }
-    .house-columns-price::after{
+
+    .house-columns-price::after {
         content: "";
         display: inline-block;
         width: 100%;
     }
-    .house-columns-price .column{
+
+    .house-columns-price .column {
         float: none;
         display: inline-block;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
+
     .house-columns figure:last-child {
         margin-bottom: 0;
     }
@@ -922,18 +944,21 @@ table tr {
     }
 
     /*contact ostany storinka*/
-    .column_main{
+    .column_main {
         float: none;
         display: block;
         width: 100%;
     }
+
     .contact-info .column_main:first-child .sub-column_main:last-child {
         padding-left: 50px;
     }
-    .details{
+
+    .details {
         margin: 0 auto;
         width: 255px;
     }
+
     .form {
         min-width: 270px;
         width: 100%;
@@ -963,34 +988,47 @@ table tr {
     footer:last-child .footer-menu {
         margin-left: 93px;
     }
+
     header .logo,
     .column.cta-btm {
         float: left;
         margin-bottom: 20px;
     }
+
     footer .phones,
-    footer .messengers{
+    footer .messengers {
         float: none;
         display: inline-block;
     }
-    .footer-menu{
-       float: none;
-       display: block;
-       margin: 0 auto;
-       padding-bottom: 15px;
+
+    .footer-menu {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 15px;
     }
 
 }
-@media screen and (max-width: 545px) {
 
-    .footer-contacts,
-    .header-columns {
-        max-width: 250px;
+@media screen and (max-width: 530px) {
+
+    .footer-contacts .column,
+    .header-columns .column {
+        display: block;
+        float: none;
         margin: 0 auto;
+        padding-bottom: 25px;
     }
 
     header .phones {
         margin-bottom: 50px;
+    }
+    .column.cta-btm {
+        text-align: center;
+        height: auto;
+    }
+    .column.cta-btm a{
+        display: block;
     }
 
     .line_meseng::before {
@@ -999,7 +1037,7 @@ table tr {
         width: 219px;
         height: 1px;
         position: absolute;
-        top: -25px;
+        top: -13px;
         left: 0;
     }
 
@@ -1025,44 +1063,68 @@ table tr {
     .house-columns img,
     .house-columns figcaption,
     footer .phones,
-    footer .messengers, 
-    .footer-menu{
+    footer .messengers,
+    .footer-menu {
         float: none;
     }
 
-    .footer-menu{
+    .footer-menu {
         display: block;
         margin: 0 auto;
         padding: 0 0 15px 40px;
     }
-    .footer-menu:last-child{
+
+    .footer-menu:last-child {
         padding: 0 0 0 40px;
     }
 
     /*contact ostany storinka*/
-    .column-main:first-child{
+    .column-main:first-child {
         padding-bottom: 50px;
     }
-    .sub-column_main{
+
+    .sub-column_main {
         float: none;
         display: block;
         margin: 0 auto;
         padding-bottom: 25px;
         width: 60%;
     }
+
     .contact-info .column_main:first-child .sub-column_main:last-child {
         padding-left: 0;
     }
-    .details{
+
+    .details {
         padding-left: 25px;
     }
-    .form label{
+
+    .form label {
         display: block;
     }
-    .form input{
+
+    .form input {
         width: 100%;
     }
-    .inp-nambers{
+
+    .inp-nambers {
         margin-left: 0;
     }
+    .inp-checkbox{
+        display: inline-block;
+        margin: 5px 10px;
+    }
+    .greyp label{
+        display: inline-block;
+    }
+    .greyp{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .house-columns-price .column {
+       display: block;
+       margin: 0 auto;
+    } 
 }
