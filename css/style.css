@@ -1009,7 +1009,7 @@ table tr {
         display: inline-block;
     }
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 545px){
 
     .footer-contacts .column{
         display: block;
