@@ -1022,11 +1022,11 @@ table tr {
         display: block;
         margin: 0 auto;
         width: 219px;
-        padding: 0 0 15px 20px;
+        padding: 0 0 15px 40px;
     }
 
     footer .footer-menu:last-child {
-        padding: 0 0 0 20px;
+        padding: 0 0 0 40px;
     }
 
 
