@@ -1079,11 +1079,11 @@ table tr {
     .footer-menu {
         display: block;
         margin: 0 auto;
-        padding: 0 0 15px 0;
+        padding: 0 0 15px 15px;
     }
 
     .footer-menu:last-child {
-        padding: 0 0 0 0;
+        padding: 0 0 0 15px;
     }
 
     /*contact ostany storinka*/
