@@ -657,7 +657,7 @@ table tr {
 }
 
 .greyp {
-    color: #666666;
+    color: #666;
 }
 
 .details {
@@ -944,6 +944,9 @@ table tr {
     }
 
     /*contact ostany storinka*/
+    .contact-info{
+        text-align: center;
+    }
     .column_main {
         float: none;
         display: block;
@@ -956,6 +959,7 @@ table tr {
 
     .details {
         margin: 0 auto;
+        padding: 0;
         width: 255px;
     }
 
