@@ -679,7 +679,7 @@ table tr {
     border: 0;
     position: absolute;
     left: 0;
-    top: -16%;
+    top: -20%;
 }
 
 .form {
@@ -944,9 +944,10 @@ table tr {
     }
 
     /*contact ostany storinka*/
-    .contact-info{
+    .contact-info {
         text-align: center;
     }
+
     .column_main {
         float: none;
         display: block;
@@ -1010,6 +1011,7 @@ table tr {
         display: block;
         margin: 0 auto;
         padding-bottom: 15px;
+        width: 219px;
     }
 
 }
@@ -1027,11 +1029,13 @@ table tr {
     header .phones {
         margin-bottom: 50px;
     }
+
     .column.cta-btm {
         text-align: center;
         height: auto;
     }
-    .column.cta-btm a{
+
+    .column.cta-btm a {
         display: block;
     }
 
@@ -1111,24 +1115,31 @@ table tr {
         width: 100%;
     }
 
+    .form .inp-checkbox {
+        width: auto;
+    }
+
     .inp-nambers {
         margin-left: 0;
     }
-    .inp-checkbox{
+
+    .inp-checkbox {
         display: inline-block;
         margin: 5px 10px;
     }
-    .greyp label{
+
+    .greyp label {
         display: inline-block;
     }
-    .greyp{
+
+    .greyp {
         text-align: center;
     }
 }
 
-@media screen and (max-width: 515px){
+@media screen and (max-width: 515px) {
     .house-columns-price .column {
-       display: block;
-       margin: 0 auto;
-    } 
+        display: block;
+        margin: 0 auto;
+    }
 }
