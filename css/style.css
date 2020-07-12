@@ -500,7 +500,9 @@ footer .phones,
 footer .messengers {
     float: right;
 }
-
+footer .messengers{
+    height: 52px;
+}
 .copy {
     background-color: #dcdce6;
     font-size: 13px;
@@ -523,9 +525,7 @@ footer .messengers {
     color: #666666;
 }
 
-.table-wrapper {
-    overflow-x: scroll;
-}
+
 
 .price_table table {
     min-width: 480px;
@@ -943,6 +943,10 @@ table tr {
         margin-left: 10px;
     }
 
+    /*2 ctorinka tablica*/
+    .table-wrapper {
+        overflow-x: scroll;
+    }
     /*contact ostany storinka*/
     .contact-info {
         text-align: center;
@@ -986,12 +990,11 @@ table tr {
     }
 
     .footer-menu {
-        padding-left: 14px;
-        margin-left: 45px;
+        padding-left: 55px;
     }
 
-    footer:last-child .footer-menu {
-        margin-left: 93px;
+    footer .footer-menu:last-child{
+        padding-left: 80px;
     }
 
     header .logo,
@@ -1005,20 +1008,31 @@ table tr {
         float: none;
         display: inline-block;
     }
+}
+@media screen and (max-width: 540px){
 
+    .footer-contacts .column{
+        display: block;
+        float: none;
+        margin: 0 auto;
+        padding-bottom: 25px;
+    }
     .footer-menu {
         float: none;
         display: block;
         margin: 0 auto;
-        padding-bottom: 15px;
         width: 219px;
+        padding: 0 0 15px 20px;
     }
 
-}
+    footer .footer-menu:last-child {
+        padding: 0 0 0 20px;
+    }
 
+
+}
 @media screen and (max-width: 530px) {
 
-    .footer-contacts .column,
     .header-columns .column {
         display: block;
         float: none;
@@ -1075,17 +1089,9 @@ table tr {
     .footer-menu {
         float: none;
     }
-
-    .footer-menu {
-        display: block;
-        margin: 0 auto;
-        padding: 0 0 15px 20px;
+    footer .messengers{
+        height: auto;
     }
-
-    .footer-menu:last-child {
-        padding: 0 0 0 20px;
-    }
-
     /*contact ostany storinka*/
     .column-main:first-child {
         padding-bottom: 50px;
